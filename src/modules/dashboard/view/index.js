@@ -86,10 +86,7 @@ const Dashboard = ({ toggleSnackbar }) => {
         </Grid>
         {boards.map((board, index) => (
           <Grid key={index} item xs={12} sm={4} lg={2}>
-            <Card
-              onClick={(e) => history.push(`/board?id=${board._id}`)}
-              style={{ height: "25vh" }}
-            >
+            <Card onClick={(e) => history.push(`/board?id=${board._id}`)}>
               <CardActionArea>
                 <CardHeader
                   title={board.title}

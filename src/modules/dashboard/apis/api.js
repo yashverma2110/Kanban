@@ -9,7 +9,7 @@ export const getAllBoards = (cb) => {
       cb(res.data);
     })
     .catch((err) => {
-      cb({ error: err.response.status });
+      cb({ error: err?.response?.status });
     });
 };
 
@@ -20,7 +20,7 @@ export const addNewBoard = (payload, cb) => {
       cb(res.data);
     })
     .catch((err) => {
-      cb({ error: err.response.status });
+      cb({ error: err?.response?.status });
     });
 };
 
@@ -31,6 +31,6 @@ export const getAllUsers = (cb) => {
       cb(res.data);
     })
     .catch((err) => {
-      cb({ error: err.response.status });
+      cb({ error: err?.response?.status });
     });
 };

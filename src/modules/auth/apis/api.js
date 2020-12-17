@@ -9,7 +9,7 @@ export const Signup = (payload, cb) => {
       cb(res.data);
     })
     .catch((err) => {
-      cb({ error: err.response.status });
+      cb({ error: err?.response?.status });
     });
 };
 
@@ -20,7 +20,7 @@ export const Login = (payload, cb) => {
       cb(res.data);
     })
     .catch((err) => {
-      cb({ error: err.response.status });
+      cb({ error: err?.response?.status });
     });
 };
 
@@ -31,6 +31,6 @@ export const Logout = (payload, cb) => {
       cb(res.data);
     })
     .catch((err) => {
-      cb({ error: err.response.status });
+      cb({ error: err?.response?.status });
     });
 };

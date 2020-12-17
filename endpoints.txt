@@ -1,0 +1,37 @@
+# /user/signup
+signup API
+
+# /user/login
+login API
+
+# /user/getAll
+to get all users
+
+# /user/logout
+to logout and delete all tokens
+
+# /add/task
+to add tasks and associates it with the parent board
+
+# /get/tasks
+to get all tasks on the basis of status and board if passed in query params
+
+# /get/task
+to get a spcific task based on id
+
+# /update/task/:id
+to update a task
+
+# /get/boards
+to get all boards in which the logged in user is added
+
+# /get/board/:id
+to get a board with a specific id
+
+# /add/board
+to add a board
+
+# /update/board/:id
+to update a board based on the id
+
+Also added a few other APIs for CRUD in backend if needed on a later date.

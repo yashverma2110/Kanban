@@ -16,6 +16,9 @@ export const boardPageStyles = makeStyles((theme) => ({
     borderRadius: "8px",
     boxShadow: theme.shadows[5],
     maxWidth: "30vw",
+    [theme.breakpoints.down("xs")]:{
+      maxWidth: "80vw",
+    }
   },
 }));
 
